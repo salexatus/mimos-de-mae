@@ -1,0 +1,146 @@
+{
+  "contact": {
+    "whatsapp": "5569992284490",
+    "instagram": "mimosdemaeconfeitaria"
+  },
+  "launch": {
+    "datetime": "2026-06-13T00:00:00-04:00",
+    "dateLabel": "13 de junho de 2026"
+  },
+  "hero": {
+    "description": "Da encomenda à entrega, cada detalhe é pensado para transformar seu momento especial em uma experiência inesquecível. Bolos personalizados, doces gourmet e a nova Estação Gourmet para eventos em Ji-Paraná.",
+    "stats": [
+      { "num": "+3k", "label": "momentos\nadoçados" },
+      { "num": "7,7k", "label": "seguidores\nno Instagram" },
+      { "num": "100%", "label": "feito à mão\nsob encomenda" }
+    ]
+  },
+  "estacao": {
+    "cards": [
+      {
+        "tag": "ESTAÇÃO 01 — PRINCIPAL",
+        "title": "Carrinho Gourmet de Doces",
+        "desc": "Apresentação elegante com doces finos artesanais, brigadeiros gourmet e mini sobremesas servidos em um carrinho decorado com a identidade do seu evento.",
+        "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1200&q=90",
+        "wide": true
+      },
+      {
+        "tag": "ESTAÇÃO 02",
+        "title": "Bolos de Festa Premium",
+        "desc": "Bolos personalizados com acabamento sofisticado para o momento central da celebração.",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=90",
+        "wide": false
+      },
+      {
+        "tag": "ESTAÇÃO 03",
+        "title": "Mini Sobremesas",
+        "desc": "Mesa de mini sobremesas com apresentação cinematográfica, toppings variados e embalagens personalizadas.",
+        "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=90",
+        "wide": false
+      },
+      {
+        "tag": "ESTAÇÃO 04",
+        "title": "Experiência Premium",
+        "desc": "Atmosfera criada para eventos exclusivos: casamentos, aniversários e corporativos com apresentação impecável.",
+        "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=90",
+        "wide": false
+      }
+    ],
+    "features": [
+      { "icon": "🎪", "title": "Montagem Completa", "desc": "Chegamos, montamos e deixamos tudo pronto para encantar seus convidados." },
+      { "icon": "🎨", "title": "Personalizado", "desc": "Carrinho e decoração adaptados ao tema e identidade visual do seu evento." },
+      { "icon": "👩‍🍳", "title": "Atendimento ao Vivo", "desc": "Confeiteira presente servindo os doces com todo o charme e profissionalismo." },
+      { "icon": "📍", "title": "Ji-Paraná e Região", "desc": "Atendemos em toda a área de Ji-Paraná e municípios próximos de Rondônia." }
+    ]
+  },
+  "portfolio": [
+    {
+      "category": "Bolos",
+      "title": "Naked Cake",
+      "desc": "Camadas delicadas com frutas frescas",
+      "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=90",
+      "size": "t4",
+      "message": "Olá! Quero um orçamento de Naked Cake."
+    },
+    {
+      "category": "Temáticos",
+      "title": "Bolo Temático",
+      "desc": "Festas infantis personalizadas",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=90",
+      "size": "w5",
+      "message": "Olá! Quero um orçamento de bolo temático."
+    },
+    {
+      "category": "Donuts",
+      "title": "Donuts Gourmet",
+      "desc": "Coberturas artesanais especiais",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=90",
+      "size": "n3",
+      "message": "Olá! Quero um orçamento de donuts gourmet."
+    },
+    {
+      "category": "Cupcakes",
+      "title": "Cupcakes",
+      "desc": "Mini bolos para presentes",
+      "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=90",
+      "size": "n3",
+      "message": "Olá! Quero um orçamento de cupcakes."
+    },
+    {
+      "category": "Presentes",
+      "title": "Caixas Presenteáveis",
+      "desc": "Embalagens artesanais especiais",
+      "image": "https://images.unsplash.com/photo-1605807646983-377bc5a76493?auto=format&fit=crop&w=900&q=90",
+      "size": "w5",
+      "message": "Olá! Quero um orçamento de caixa presente."
+    },
+    {
+      "category": "Doces Finos",
+      "title": "Brigadeiros Gourmet",
+      "desc": "Sabores únicos e artesanais",
+      "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=90",
+      "size": "w5",
+      "message": "Olá! Quero um orçamento de brigadeiros gourmet."
+    }
+  ],
+  "especialidades": [
+    {
+      "num": "01",
+      "title": "Bolos Personalizados",
+      "desc": "Do aniversário infantil ao casamento sofisticado. Cada bolo esculpido com técnica e carinho.",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=90"
+    },
+    {
+      "num": "02",
+      "title": "Doces Gourmet",
+      "desc": "Brigadeiros, trufas e doces finos artesanais com sabores exclusivos e apresentação irresistível.",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=90"
+    },
+    {
+      "num": "03",
+      "title": "Estação Gourmet",
+      "desc": "🌟 Em breve! Carrinho gourmet para eventos, festas e celebrações. Lançamento 13/06/2026.",
+      "image": "https://images.unsplash.com/photo-1605807646983-377bc5a76493?auto=format&fit=crop&w=800&q=90"
+    }
+  ],
+  "depoimentos": [
+    {
+      "text": "O bolo do aniversário da minha filha ficou lindo demais! Superou todas as expectativas. Cada detalhe foi perfeito e o sabor então... inesquecível!",
+      "name": "Ana Paula",
+      "location": "Ji-Paraná, RO",
+      "color": "rose"
+    },
+    {
+      "text": "Contratei para o meu casamento e foi o ponto alto da festa. Todos os convidados elogiaram muito. Profissionalismo e sabor impecáveis!",
+      "name": "Camila Ribeiro",
+      "location": "Ji-Paraná, RO",
+      "color": "gold"
+    },
+    {
+      "text": "Os brigadeiros gourmet são simplesmente os melhores que já provei! Encomendo sempre para presentes e todo mundo pede o contato.",
+      "name": "Mariana Costa",
+      "location": "Ji-Paraná, RO",
+      "color": "ink"
+    }
+  ]
+}

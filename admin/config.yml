@@ -1,0 +1,136 @@
+# =====================================================================
+# Sveltia CMS — configuração do painel de conteúdo
+# Edita o arquivo content.json e comita direto no GitHub (dispara o deploy)
+# =====================================================================
+
+backend:
+  name: github
+  repo: salexatus/mimos-de-mae
+  branch: main
+  # URL do relay de autenticação OAuth (ver README → "Ativar o login do CMS").
+  # Troque pelo endereço do seu Cloudflare Worker (sveltia-cms-auth).
+  base_url: https://TROQUE-PELO-SEU-WORKER.workers.dev
+
+# Idioma do painel
+locale: pt
+
+# Uploads de imagens vão para esta pasta do repositório
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: conteudo
+    label: Conteúdo do site
+    description: Textos, datas, fotos, portfólio e depoimentos da página inicial.
+    files:
+      - name: site
+        label: Página inicial
+        file: content.json
+        description: Tudo que aparece na landing page.
+        fields:
+          # ---------- Contato ----------
+          - label: Contato
+            name: contact
+            widget: object
+            fields:
+              - { label: "WhatsApp (só números, com DDI 55)", name: whatsapp, widget: string, hint: "Ex.: 5569992284490" }
+              - { label: "Instagram (sem @)", name: instagram, widget: string, hint: "Ex.: mimosdemaeconfeitaria" }
+
+          # ---------- Lançamento ----------
+          - label: Lançamento da Estação Gourmet
+            name: launch
+            widget: object
+            fields:
+              - label: "Data e hora do lançamento"
+                name: datetime
+                widget: datetime
+                date_format: "DD/MM/YYYY"
+                time_format: "HH:mm"
+                picker_utc: false
+                hint: "A contagem regressiva no site usa esta data."
+              - { label: "Texto da data (como aparece no site)", name: dateLabel, widget: string, hint: 'Ex.: "13 de junho de 2026"' }
+
+          # ---------- Hero / Sobre ----------
+          - label: Sobre (bloco principal)
+            name: hero
+            widget: object
+            fields:
+              - { label: "Texto de apresentação", name: description, widget: text }
+              - label: "Números em destaque"
+                name: stats
+                widget: list
+                max: 3
+                fields:
+                  - { label: "Número", name: num, widget: string, hint: "Ex.: +3k" }
+                  - { label: "Legenda", name: label, widget: text, hint: "Use Enter para quebrar a linha." }
+
+          # ---------- Estação Gourmet ----------
+          - label: Estação Gourmet
+            name: estacao
+            widget: object
+            fields:
+              - label: "Cartões (estações)"
+                name: cards
+                widget: list
+                fields:
+                  - { label: "Etiqueta", name: tag, widget: string, hint: "Ex.: ESTAÇÃO 01 — PRINCIPAL" }
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Descrição", name: desc, widget: text }
+                  - { label: "Imagem", name: image, widget: image }
+                  - { label: "Cartão largo (ocupa 2 colunas)", name: wide, widget: boolean, default: false }
+              - label: "Diferenciais"
+                name: features
+                widget: list
+                fields:
+                  - { label: "Ícone (emoji)", name: icon, widget: string, hint: "Ex.: 🎪" }
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Descrição", name: desc, widget: text }
+
+          # ---------- Portfólio ----------
+          - label: Portfólio
+            name: portfolio
+            widget: list
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - { label: "Categoria (etiqueta)", name: category, widget: string }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Descrição", name: desc, widget: string }
+              - { label: "Imagem", name: image, widget: image }
+              - label: "Tamanho no mosaico"
+                name: size
+                widget: select
+                options:
+                  - { label: "Grande (destaque vertical)", value: t4 }
+                  - { label: "Largo (horizontal)", value: w5 }
+                  - { label: "Pequeno", value: n3 }
+                default: n3
+              - { label: "Mensagem do WhatsApp ao clicar", name: message, widget: string, required: false, hint: "Opcional. Se vazio, usa o título." }
+
+          # ---------- Especialidades ----------
+          - label: Especialidades
+            name: especialidades
+            widget: list
+            summary: "{{fields.num}} — {{fields.title}}"
+            fields:
+              - { label: "Número", name: num, widget: string, hint: "Ex.: 01" }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Descrição", name: desc, widget: text }
+              - { label: "Imagem", name: image, widget: image }
+
+          # ---------- Depoimentos ----------
+          - label: Depoimentos
+            name: depoimentos
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Depoimento", name: text, widget: text }
+              - { label: "Nome", name: name, widget: string }
+              - { label: "Local", name: location, widget: string, default: "Ji-Paraná, RO" }
+              - label: "Cor do avatar"
+                name: color
+                widget: select
+                options:
+                  - { label: "Rosê", value: rose }
+                  - { label: "Dourado", value: gold }
+                  - { label: "Escuro", value: ink }
+                default: rose

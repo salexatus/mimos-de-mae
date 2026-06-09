@@ -9,16 +9,58 @@ Site estático, sem dependências de build — HTML + CSS + JS puro, pronto para
 ```
 .
 ├── index.html                 # Página principal (semântica + SEO + JSON-LD)
+├── content.json               # CONTEÚDO editável (fonte única, gerida pelo CMS)
+├── admin/
+│   ├── index.html             # Painel Sveltia CMS
+│   └── config.yml             # Modelo de campos do CMS
 ├── assets/
 │   ├── css/styles.css         # Estilos (premium, responsivo, acessível)
-│   ├── js/main.js             # Cursor, contagem regressiva, menu, reveals
-│   └── favicon.svg            # Ícone da marca
+│   ├── js/main.js             # Renderiza o content.json + interações
+│   ├── favicon.svg            # Ícone da marca
+│   └── uploads/               # Fotos enviadas pelo CMS
 ├── CNAME                      # Domínio personalizado do GitHub Pages
 ├── robots.txt                 # SEO
 ├── sitemap.xml                # SEO
 ├── .nojekyll                  # Impede processamento Jekyll no Pages
 └── .github/workflows/deploy.yml  # Deploy automático no GitHub Pages
 ```
+
+## ✏️ Editar o conteúdo (CMS)
+
+O conteúdo do site (textos, datas, fotos, portfólio, depoimentos) fica em
+[`content.json`](content.json) e é editado por um painel visual — a confeiteira
+nunca mexe em código.
+
+- **Painel:** `https://mimosdemae.limadesigner.com.br/admin/`
+- Ao salvar, o CMS comita no GitHub e o site republica sozinho em ~30s.
+
+### Ativar o login do CMS (setup único)
+
+O Sveltia CMS é git-based e precisa de um "relay" de autenticação OAuth para
+logar com o GitHub (o GitHub Pages não fornece isso sozinho). É gratuito:
+
+1. **Crie um GitHub OAuth App** em
+   `https://github.com/settings/developers → New OAuth App`:
+   - *Homepage URL:* `https://mimosdemae.limadesigner.com.br`
+   - *Authorization callback URL:* a URL do worker do passo 2 + `/callback`
+   - Anote o **Client ID** e gere um **Client Secret**.
+
+2. **Publique o relay de autenticação** (Cloudflare Workers, plano free):
+   - Use o projeto pronto **`sveltia-cms-auth`**:
+     `https://github.com/sveltia/sveltia-cms-auth`
+   - Faça o deploy e configure as variáveis `GITHUB_CLIENT_ID`,
+     `GITHUB_CLIENT_SECRET` e `ALLOWED_DOMAINS=mimosdemae.limadesigner.com.br`.
+   - Você receberá uma URL tipo `https://nome.usuario.workers.dev`.
+
+3. **Aponte o CMS para o relay:** em [`admin/config.yml`](admin/config.yml),
+   troque `base_url` pela URL do worker. Commit + push.
+
+> Alternativa sem Cloudflare: hospedar o site (ou só o relay) na Netlify e usar
+> o Netlify Identity/Git Gateway. O Cloudflare Worker é a opção recomendada por
+> manter o site no GitHub Pages.
+
+Enquanto o `base_url` não estiver configurado, o painel `/admin/` abre mas o
+login falha — o **site público funciona normalmente** independentemente disso.
 
 ## 🚀 Publicar no subdomínio (GitHub Pages)
 
