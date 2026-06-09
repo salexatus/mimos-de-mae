@@ -20,29 +20,29 @@
       {
         "tag": "ESTAÇÃO 01 — PRINCIPAL",
         "title": "Carrinho Gourmet de Doces",
-        "desc": "Apresentação elegante com doces finos artesanais, brigadeiros gourmet e mini sobremesas servidos em um carrinho decorado com a identidade do seu evento.",
-        "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1200&q=90",
+        "desc": "Apresentação elegante com brigadeiros gourmet, morangos do amor e doces finos artesanais em caixas decoradas com a identidade do seu evento.",
+        "image": "assets/uploads/Foto09.jpg",
         "wide": true
       },
       {
         "tag": "ESTAÇÃO 02",
         "title": "Bolos de Festa Premium",
-        "desc": "Bolos personalizados com acabamento sofisticado para o momento central da celebração.",
-        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=90",
+        "desc": "Bolos personalizados em dois andares com acabamento sofisticado para o momento central da celebração.",
+        "image": "assets/uploads/Foto10.jpg",
         "wide": false
       },
       {
         "tag": "ESTAÇÃO 03",
         "title": "Mini Sobremesas",
-        "desc": "Mesa de mini sobremesas com apresentação cinematográfica, toppings variados e embalagens personalizadas.",
-        "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=90",
+        "desc": "Macarons, doces finos e mini sobremesas com apresentação cinematográfica e acabamento impecável.",
+        "image": "assets/uploads/Foto04.jpg",
         "wide": false
       },
       {
         "tag": "ESTAÇÃO 04",
         "title": "Experiência Premium",
-        "desc": "Atmosfera criada para eventos exclusivos: casamentos, aniversários e corporativos com apresentação impecável.",
-        "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=90",
+        "desc": "Doces sob encomenda para eventos exclusivos: casamentos, aniversários e datas especiais com apresentação irresistível.",
+        "image": "assets/uploads/Foto01.jpg",
         "wide": false
       }
     ],
@@ -55,50 +55,50 @@
   },
   "portfolio": [
     {
-      "category": "Bolos",
-      "title": "Naked Cake",
-      "desc": "Camadas delicadas com frutas frescas",
-      "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=90",
+      "category": "Bolos Temáticos",
+      "title": "Bolo Pool Party",
+      "desc": "Bolo de festa em dois andares totalmente personalizado",
+      "image": "assets/uploads/Foto10.jpg",
       "size": "t4",
-      "message": "Olá! Quero um orçamento de Naked Cake."
+      "message": "Olá! Quero um orçamento de bolo temático personalizado."
     },
     {
-      "category": "Temáticos",
-      "title": "Bolo Temático",
-      "desc": "Festas infantis personalizadas",
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=90",
+      "category": "Bolos Decorados",
+      "title": "Bolo Laço Rosê",
+      "desc": "Elegância minimalista com laço em pasta americana",
+      "image": "assets/uploads/Foto11.jpg",
       "size": "w5",
-      "message": "Olá! Quero um orçamento de bolo temático."
+      "message": "Olá! Quero um orçamento de um bolo decorado."
     },
     {
       "category": "Donuts",
-      "title": "Donuts Gourmet",
-      "desc": "Coberturas artesanais especiais",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=90",
+      "title": "Torre de Donuts",
+      "desc": "Mini donuts decorados para festas temáticas",
+      "image": "assets/uploads/Foto07.jpg",
       "size": "n3",
-      "message": "Olá! Quero um orçamento de donuts gourmet."
+      "message": "Olá! Quero um orçamento de torre de donuts."
     },
     {
       "category": "Cupcakes",
-      "title": "Cupcakes",
-      "desc": "Mini bolos para presentes",
-      "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=90",
+      "title": "Cupcake na Caixa",
+      "desc": "Cupcakes individuais em embalagem presenteável",
+      "image": "assets/uploads/Foto08.jpg",
       "size": "n3",
       "message": "Olá! Quero um orçamento de cupcakes."
     },
     {
       "category": "Presentes",
       "title": "Caixas Presenteáveis",
-      "desc": "Embalagens artesanais especiais",
-      "image": "https://images.unsplash.com/photo-1605807646983-377bc5a76493?auto=format&fit=crop&w=900&q=90",
+      "desc": "Brigadeiros gourmet e morangos do amor decorados",
+      "image": "assets/uploads/Foto09.jpg",
       "size": "w5",
-      "message": "Olá! Quero um orçamento de caixa presente."
+      "message": "Olá! Quero um orçamento de uma caixa presente."
     },
     {
       "category": "Doces Finos",
       "title": "Brigadeiros Gourmet",
-      "desc": "Sabores únicos e artesanais",
-      "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=90",
+      "desc": "Sabores únicos com acabamento sofisticado",
+      "image": "assets/uploads/Foto02.jpg",
       "size": "w5",
       "message": "Olá! Quero um orçamento de brigadeiros gourmet."
     }
@@ -107,20 +107,20 @@
     {
       "num": "01",
       "title": "Bolos Personalizados",
-      "desc": "Do aniversário infantil ao casamento sofisticado. Cada bolo esculpido com técnica e carinho.",
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=90"
+      "desc": "Do aniversário infantil temático ao bolo de festa sofisticado. Cada bolo esculpido com técnica e carinho.",
+      "image": "assets/uploads/Foto12.jpg"
     },
     {
       "num": "02",
       "title": "Doces Gourmet",
-      "desc": "Brigadeiros, trufas e doces finos artesanais com sabores exclusivos e apresentação irresistível.",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=90"
+      "desc": "Brigadeiros, macarons e doces finos artesanais com sabores exclusivos e apresentação irresistível.",
+      "image": "assets/uploads/Foto04.jpg"
     },
     {
       "num": "03",
       "title": "Estação Gourmet",
       "desc": "🌟 Em breve! Carrinho gourmet para eventos, festas e celebrações. Lançamento 13/06/2026.",
-      "image": "https://images.unsplash.com/photo-1605807646983-377bc5a76493?auto=format&fit=crop&w=800&q=90"
+      "image": "assets/uploads/Foto05.jpg"
     }
   ],
   "depoimentos": [
