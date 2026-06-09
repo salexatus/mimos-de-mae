@@ -10,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+# Força as JS actions a rodarem em Node.js 24 (remove o aviso de deprecation do Node 20)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # Permite apenas um deploy concorrente
 concurrency:
   group: pages
@@ -23,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
